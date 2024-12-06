@@ -7,6 +7,26 @@
 - Try to assign other object to both identifiers.
 - Explain script behaviour. */
 
-const fn = null;
 
-module.exports = { fn };
+const fn = () => {
+    const obj1 = {
+      name: "Daniil"
+    }
+    let obj2 = {
+      name: "Daniil"
+    }
+  
+    obj1.name = "New name"
+    obj2.name = "New name"
+  
+    // obj1 = {
+    //     name: "Sasha" TypeError: Assignment to constant variable.
+    // }    We can change only field in constant, but not fully constant
+    obj2 = {
+      name: "Sasha"
+    }
+  
+    console.dir(obj1)
+    console.dir(obj2)
+  }
+fn()
