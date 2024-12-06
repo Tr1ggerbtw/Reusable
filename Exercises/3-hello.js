@@ -2,6 +2,9 @@
 
 // Prepare function to print greeting with single argument
 
-const hello = null;
+let aName = "Daniil"
+function greeting(name){
+    console.log("Hello, " + name);
+}
+greeting(aName);
 
-module.exports = { hello };
