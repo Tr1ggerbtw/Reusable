@@ -4,13 +4,13 @@
 // array with all numbers from the range [15, 30] including endpoints
 
 const range = (start, end) => {
-    const massive = []
+    const arr = []
   
     for (let i = start; i <= end; i++) {
-      massive.push(i)
+      arr.push(i)
     }
   
-    return massive
+    return arr
   }
   
   console.dir(range(15, 30))
