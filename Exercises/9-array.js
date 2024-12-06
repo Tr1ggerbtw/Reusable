@@ -26,8 +26,8 @@ let Arr = [];
                 {
                   return Arr[i].phone
                 }
+            }
         }
-    }
     console.log(findPhoneByName("Danka"));
 
 module.exports = { Phonebook, findPhoneByName };
